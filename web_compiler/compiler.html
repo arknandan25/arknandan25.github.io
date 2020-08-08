@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        
+        <!-- meta data bootstrap cdn -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+            <!--bootstrap cdn files-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <!-- meta end -->
+
+
+
+        <!--google fonts-->
+        <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+        <!--font awesome -->
+        <!--#######other links to the external js files#############-->
+        <!--external css link -->
+        <link href="#" rel="stylesheet">
+
+        <!--title of the webpage-->
+        <title>Web Compiler by Ark</title>
+
+        <!-- internal css -->
+        <style type="text/css">
+        body
+        {
+            
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+        #top-bar
+        {
+            width: 100%;
+            height: 50px;
+            background-color: #EEEEEE;
+            float: left;
+        }
+        h2
+        {
+            padding:0px 25px;
+            font-family: 'Anton', sans-serif;
+
+        }
+
+        .stylebutton
+        {
+            
+            float: left;
+            position: relative;
+            top: -45px;
+            left: 500px;
+            
+
+        }
+        .active
+        {
+            background-color:#E8F2FF;
+        }
+        .highlight
+        {
+            background-color: #E8F2FF;
+        }
+        .panel
+        {
+            float: left;
+            width: 25%;
+            height: 100%;
+            resize: none;
+        }
+        #htmlpanel
+        {
+            
+            border:none;
+            border-right: 1px solid #EEEEEE ;
+
+        }
+        iframe
+        {
+            
+            border: none;
+            border-right: 1px solid #EEEEEE;
+
+        }
+        .hidden
+        {
+            display: none;
+        }
+        .hiddenimg
+        {
+            display: none;
+        }
+        #img
+        {
+            width:300px;
+            height: 300px;
+            margin-top: 100px;
+            margin-left: 500px;
+        }  
+        #csspanel
+        {
+            text-align: left;
+        }
+        </style>
+        
+    </head>
+
+    <body>
+                    <!-- js -jquery links -->
+        <script type="text/javascript" src="jquery.min.js"></script>
+        <link href="jquery-ui/jquery-ui.css" rel="stylesheet">
+         <script src="jquery-ui/jquery-ui.js"></script>
+        <!-- js end -->
+        
+            <div id="top-bar">
+              
+              <h2>Web Compiler <span><sub>by Ark</sub></span></h2> 
+              <span class="d-flex align-items-center">
+              <button class="stylebutton active"  id="html"> <span>HTML</span></button>
+              <button class="stylebutton "  id="css">CSS</button>
+              <button class="stylebutton "  id="js">Javascript</button>
+              <button class="stylebutton  active"  id="output">Output</button>
+            </span>
+
+            
+
+
+               </div>
+            <!-- <div id="top-bar">
+                <div class="container" >
+                    <div class="row">
+                        <div class="col-sm">
+                        Web Compiler
+                        </div>
+                        <div class="col-sm">
+                            <button class="stylebutton active btn btn-light"  id="html" type="button"> <span class= "text-danger">HTML</span></button>
+                            <button class="stylebutton "  id="css">CSS</button>
+                            <button class="stylebutton "  id="js">Javascript</button>
+                            <button class="stylebutton  active"  id="output">Output</button>
+                        </div>
+                        <div class="col-sm">
+                        BY:Ark Nandan
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+
+<!-- HTML for iframes  -->
+            <div id="body-container"> 
+              <img id="img"  class="hiddenimg " src="background.png" alt="Background-img-0">
+<!--   HTML Tab textarea              -->
+              <textarea id="htmlpanel" class="panel"><h3 id="p1">Please click.</h3><button id="button1">Click me!</button></textarea>
+<!--  CSS Tab  textarea         -->
+            <textarea id="csspanel" class="panel hidden ">#button1{
+display: inline-block;
+border-radius: 4px;
+background-color: #f4511e;
+display: inline-block;
+border-radius: 4px;
+background-color: #f4511e;
+border: none;
+color: #FFFFFF;
+text-align: center;
+font-size: 28px;
+padding: 20px;
+width: 200px;
+margin: 5px;
+}
+
+            </textarea>
+<!--  JS Tab textarea              -->
+              <textarea id="jspanel" class="panel hidden">
+document.getElementById("button1").onclick=function()
+{
+document.getElementById("p1").innerHTML="<h3>Welcome to web compiler 1.0 ,I hope you have a wonderful experience using it :) .</h3>"
+}
+            </textarea>
+<!--  O/P Tab textarea              -->
+              <iframe  id="outputpanel" class="panel"></iframe>
+            </div>
+<!-- End of HTML       -->
+
+
+<!--Inscript javascript starts here-->
+    <script type="text/javascript">
+        
+       $(".stylebutton").hover(function()
+     {
+      $(this).addClass("highlight");
+
+     },function()
+     {
+      $(this).removeClass("highlight");
+
+     });
+
+      var cnt=0;
+
+     $(".stylebutton").click(function()
+       {
+        if(cnt!=0)
+        {
+            $("#img").toggleClass("hiddenimg");
+            cnt--;
+        }
+         $(this).toggleClass("active");
+
+        var idname=$(this).attr("id")+"panel";
+        $("#"+idname).toggleClass("hidden");
+        var noofactiveusers=4-$(".hidden").length;
+       $(".panel").width(($(window).width()/noofactiveusers)-10);
+        if(noofactiveusers==0)
+        {
+          $("#img").toggleClass("hiddenimg");
+          ++cnt;
+        }
+
+
+       });
+
+
+     $(".panel").height($(window).height() - $("#top-bar").height() - 15);//to properly fit content in webpagei.e no scroll bar
+     $(".panel").width(($(window).width() / 2) - 10);
+
+     function updateOutput() 
+     {
+
+        $("iframe").contents().find("body").html('<html><head><style type="text/css">'+ $('#csspanel').val()+'</style></head><body>'+ $('#htmlpanel').val() + '</body></html>' );//to view html and css data in iframe
+        //to view js data in iframe now
+        document.getElementById("outputpanel").contentWindow.eval($("#jspanel").val());//eval function evaluates content of js provided to it and contentwindow allows what ever parameter user gives it to show in iframe
+
+     }
+     updateOutput();//to view data defaultly entered by me on entering the webpage
+
+     $("textarea").on('change keyup paste', function() {
+
+     updateOutput();//to update css and html data entered by user simultaneously as entered by user
+
+      });
+
+
+    </script>
+        
+    </body>
+   
+
+</html>
