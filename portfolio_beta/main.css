@@ -8,15 +8,14 @@ body {
   overflow-x: hidden;
 }
 
-
 .icon-top {
   background: #2a9134;
-  height: 3rem;
+  height: 9vh;
 }
 
 .icon-top a {
   color: #f1fffa;
-  font-size: 25px;
+  font-size: 35px;
   transition: color 0.5s ease;
 
 }
@@ -196,7 +195,6 @@ body {
   /*background: #242424;*/
   background: #242424;
   clip-path: polygon(0 0, 50% 0, 100% 100%, 0 100%);
-  /* clip-path: polygon(0 0, 50% 0, 100% 100%, 0 100%); */
   transition: all 1s ease;
   margin-top: auto;
   margin-bottom: auto;
@@ -248,14 +246,7 @@ body {
   transform: translateY(-7px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
 
-}
-
-.about-progress {
-  min-height: 50vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/video-filler.jpeg)center/cover fixed no-repeat;
-  outline: 5px solid #2a9134;
-  outline-offset: 10px;
-}
+} `
 
 
 
@@ -403,9 +394,9 @@ body {
 
 #posts .card-img-top {
   border-radius: 0!important;
-  width: auto;
-  height: 23rem;
-  object-fit: fill;
+  /* width: 100%; */
+  height: 18rem;
+  object-fit: cover;
 }
 
 #posts .card-footer {
@@ -439,9 +430,9 @@ body {
 
 /*contact-form*/
 
-#contact {
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/code_banner.jpeg)center/cover fixed no-repeat;
-  /* clip-path: polygon(0 20%, 100% 0%, 100% 80%, 0 100%) */
+#contact-form {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/banner-2.jpeg)center/cover fixed no-repeat;
+  clip-path: polygon(0 20%, 100% 0%, 100% 80%, 0 100%)
 }
 
 .height-30 {
@@ -675,7 +666,7 @@ body {
   border-color: #2a9134;
   color: #2a9134;
 }
-.bg-white{
+,bg-white{
   background-color: white;
   min-height: 120vh;
 }
