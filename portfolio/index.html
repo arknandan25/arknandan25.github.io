@@ -1,11 +1,652 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>portfolio</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script src="/dist/build.js"></script>
-  </body>
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!--main css-->
+  <link rel="stylesheet" href="main.css">
+  <!--font awesome-->
+<script src="all.js" ></script>
+  <!--google fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Kalam:700" rel="stylesheet">
+</head>
+
+<body>
+  <!-- topbar -->
+  <div class="container-fluid icon-top py-2 px-3">
+    <div class="row">
+      <div class="col d-flex justify-content-between align-items-baseline">
+        <div class="top-icons">
+          <a href="https://github.com/arknandan25" target="_blank" class="mx-2"><i class="fab fa-github"></i></a><a href="https://www.linkedin.com/in/arknandan-singh-chauhan/" target="_blank" class="mx-2"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <h5 class="text-capitalize text-light"> Ark Nandan Singh Chauhan</h5>
+      </div>
+    </div>
+  </div>
+<!-- end of topbar -->
+
+  <header id="header">
+    <nav id="navbar" class="navbar navbar-expand-lg">
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+  </button>
+
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link m-2 text-capitalize nav-active" href="#header">home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link m-2 text-capitalize" href="#projects">projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link m-2 text-capitalize" href="#about">about</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link m-2 text-capitalize" href="#posts">experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link m-2 text-capitalize" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link m-2 text-capitalize" href="#contact">contact</a>
+          </li>
+        </ul>
+
+
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col no-padding">
+          <div id="demo-slider" class="carousel slide"   data-interval="false" data-ride="carousel">
+
+
+
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+              <div class="carousel-item item-3 active">
+                <div class="carousel-caption mb-5 text-left">
+                  <h1 class="display-3  mb-2 text-light">Hi,I am Ark Chauhan</h1>
+                  <a href="resume.html" target="_blank" class="btn btn-lg mb-5 text-uppercase banner-btn">my resume</a>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#demo-slider" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+            <a class="carousel-control-next" href="#demo-slider" role="button" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+    <span class="sr-only">Next</span>
+  </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!--  projects-->
+  <section id="projects" class="py-5">
+    <div class="container">
+      <!--     title-->
+      <div class="row title mb-5">
+        <div class="col text-center">
+          <h1 class="text-uppercase">projects</h1>
+          <a href="#" class="mb-0"><i class="fas fa-camera"></i></a>
+          <div class="title-underline"></div>
+        </div>
+
+      </div>
+      <!--      end of title-->
+      <!--      button row-->
+      <div class="row">
+        <div class="col text-center">
+          <div class="btn-group btn-group-lg mb-5 button-group filter-button-group" role="group">
+            <button type="button" class="btn text-uppercase" data-filter="*">all</button>
+            <button type="button" class="btn text-uppercase" data-filter=".web">web</button>
+            <button type="button" class="btn text-uppercase" data-filter=".ml">ML</button>
+            <button type="button" class="btn text-uppercase" data-filter=".android">android</button>
+          </div>
+        </div>
+      </div>
+
+      <!--      images row-->
+      <div class="row grid projects">
+        <div class="col-sm-6 col-md-4 my-3 web">
+          <div class="card" style="font-size: 13px">
+            <img src="img/code-card-1.jpg"  style="height: 35vh;width: 100%;" class="card-img-top" alt="Compiler">
+            <div class="card-body">
+              <h5 class="card-title">Web Code Player</h5>
+              <ul class="card-text">
+                <li>Developed a code player for real time web development </li>
+                <li>Uses Javascript and Jquery for developing & updating data on the website</li>
+                <li>Has support for HTML, CSS, JS and displays the output for each change in real time</li>
+              </ul>
+              <a href="https://arknandan25.github.io/web_compiler/compiler.html" target="_blank" class="btn btn-outline-success">Preview</a>
+              <a href="404.html" class="btn btn-outline-dark">Github</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-4 my-3 web" style="font-size: 13px">
+          <div class="card" >
+            <img src="img/code-card-3-movie-2.jpg" style="height: 35vh;width: 100%;" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">IMDB Movie Tracker</h5>
+              <ul>
+                <li>A movie/tv-show tracker in ES6 Javascript and JQuery with OMDB API integration</li>
+                <li>Uses Axios, a Promise based HTTP client for the browser</li>
+                <Li>Developed a User friendly and responsive GUI using CSS media queries and BootStrap</Li>
+              </ul>
+              <!-- <a target="_blank" class="btn btn-outline-success">Preview</a> -->
+              <a href="#" target="_blank" class="btn btn-outline-dark">Github</a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-sm-6 col-md-4 my-3 android" style="font-size: 13px">
+          <div class="card" >
+            <img src="img/code-card-whatsapp-4.jpg"  style="height: 35vh;width: 100%;" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">WhatsApp Clone</h5>
+              <ul>
+                <li>A clone of WhatApp in Java for Android development</li>
+                <li>Uses Google's Firebase for realtime updates in chats and rendering user information</li>
+                <Li>Core features include: one-on-one chat, group chat, adding members via phone's contact list</Li>
+              </ul>              <a href="https://github.com/arknandan25/Whatsapp-Clone" class="btn btn-outline-dark">Github</a>
+            </div>
+          </div>
+
+        </div>
+
+
+        <div class="col-sm-6 col-md-4 my-3 web" style="font-size: 13px">
+          <div class="card" >
+            <img src="img/code-card-2-covid.jpg" style="height: 35vh;width: 100%;" class="card-img-top" alt="Covid">
+            <div class="card-body">
+              <h5 class="card-title">Covid-19 Patient Tracker </h5>
+              <ul class="card-text">
+                <li>Developed a Portal for health workers to register data of covid patients</li>
+                <li>Used Python socket programming to create a central server for  transmission of data packets b/w workers and hospitals</li>
+                <li>Used AES encryption algorithm for censoring all confidential data </li>
+                <li>Used tkinter for developing a GUI interfce for the server and the clients</li>
+              </ul>
+              <a href="404.html" class="btn btn-outline-dark">Github</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-4 my-3 ml" style="font-size: 13px">
+          <div class="card" >
+            <img src="img/code-card-key-1.jpg" class="card-img-top"   style="height: 35vh;width: 100%;" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Keylogger</h5>
+              <ul class="card-text">
+                <li>Keylogger made in C++ with windows programming in eclipse and mingw compiler</li>
+                <li>Log function makes use of GetAsyncKeyState(key) function to register a key and then checks for multiple combinations of keystrokes</li>
+                <li> The Mask function uses windows programming to hide the dialog box created in the release version of the cpp file</li>
+              </ul>
+              <a href="404.html" class="btn btn-outline-dark">Github</a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-sm-6 col-md-4 my-3 web" style="font-size: 13px">
+          <div class="card" >
+            <img src="img/code-card-twitter-1.jpg" class="card-img-top"  style="height: 35vh;width: 100%;" alt="twitter">
+            <div class="card-body">
+              <h5 class="card-title">Twitter Clone</h5>
+              <ul class="card-text">
+                <li>A clone of twitter made in core PHP without any frame work</li>
+                <li>Uses the Model-View-Controller(MVC) using PHP, Javascript, Mysql, Ajax</li>
+                <li>Has all the core functionalty like logging/signup, creating and tweeting a post , searching tweets, following/unfollowing other users, viewing your timeline,
+                  viewing your recent tweets, public profiles with chat option
+                </li>
+              </ul>
+              <!-- <a target="_blank" class="btn btn-outline-success">Preview</a> -->
+              <a href="https://github.com/arknandan25/twitterclone" class="btn btn-outline-dark">Github</a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-sm-6 col-md-4 my-3 ml" style="font-size: 13px">
+          <div class="card" >
+            <img src="img/code-card-4-face-1.jpg" style="height: 35vh;width: 100%;" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Face Detection</h5>
+              <ul>
+                <li>Worked on facial/smile detection with OpenCV and Python </li>
+                <li>Worked on Object Detection using Single Shot Detection and YOLO</li>
+                <Li>Worked on image creation with Generative Adversarial Networks(GANs)</Li>
+              </ul>              <a href="404.html" class="btn btn-outline-dark">Github</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- end of projects-->
+<!-- about me -->
+
+  <section id="about" class="pb-2 pt-5">
+    <!--video filler-->
+
+    <!-- end of video fliller-->
+    <div class="container ">
+      <!--     title-->
+      <div class="row title  mt-4">
+        <div class="col text-center">
+          <h1 class="text-uppercase">about me</h1>
+          <!-- <h3 class="text-capitalize text-light">ALWAYS LEARNING AND PUSHING BOUNDRIES</h3> -->
+          <a href="#" class="mb-0"><i class="fas fa-globe"></i></a>
+          <div class="title-underline"></div>
+
+        </div>
+
+      </div>
+      <!--      end of title-->
+      <div class="row mb-5 my-0">
+
+        <div class="col-md-12 py-5 about-text text-center">
+          <h2 class="text-uppercase">always learning and pushing boundries</h2>
+          <p class="lead text-light">I am an aspiring software engineer currently pursuing computer engineering at Trinity College Dublin.
+            Having worked previously as a freelance web developer I have learnt a lot about team work, collaboration and agile work methodology.
+            Currently I am pursuing an internship at Amazon as  a Systems Development Engineer working in DevOps.
+          </p>
+          <a href="resume.html" target="_blank" class="btn btn-lg d-block w-75 mx-auto text-uppercase mb-3">download resume</a>
+          <span class="mx-auto mb-5">
+            <a href="https://www.linkedin.com/in/arknandan-singh-chauhan/" target="_blank" class="mx-2" style="font-size:29px"><i class="fab fa-linkedin"  ></i></a>
+            <a href="https://github.com/arknandan25" target="_blank" class="mx-2" style="font-size:29px"><i class="fab fa-github"  ></i></a>
+
+          </span>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+  <!--end of about-->
+
+ <!--experience section starts here-->
+ <section id="posts" class="py-5 px-4">
+  <div class="container">
+    <!--     title-->
+    <div class="row title mb-5">
+      <div class="col text-center">
+        <h1 class="text-uppercase">Experience</h1>
+        <!-- <h3 class="text-capitalize">Lorem ipsum dolor sit amet.</h3> -->
+        <a href="#" class="mb-0"><i class="fas fa-edit"></i></a>
+        <div class="title-underline"></div>
+
+      </div>
+
+    </div>
+    <!--      end of title-->
+  </div>
+  <div class="row">
+
+    <!--     post-->
+    <div class="col-md-6 col-lg-4 my-3">
+      <div class="card">
+        <img src="img/aws-3.png" class="card-img-top" alt="work-experience-1-img">
+        <!-- <h6 class="corner-text mb-0 px-3">New</h6> -->
+        <h2 class="my-2 text-capitalize text-center ">Amazon Web Services,Dublin</h2>
+        <ul class="">
+          <li>Position: Systems Development Engineer</li>
+          <li>Type: Internship</li>
+          <li>Description:
+            <ol>
+              <li>Worked on the development of automation solutions within AWS’s Optical Networking ecosystem.</li>
+              <li>Worked on Device Operations for provisioning  network devices via Zero Touch Provisioning(ZTP) process without human intervention.
+              </li>
+              <li>Worked on Amazon’s latest in-house network device Tigris and delivered operations supported by it.</li>
+              <li>Designed, developed and delivered software in Python  in order to help network engineers enable the best network performance.
+              </li>
+              <li>Worked with Pipelines for Continuous Integration and deployment of code globally.
+              </li>
+            </ol>
+          </li>
+        </ul>
+        <hr class="mb-0">
+      </div>
+    </div>
+    <!--end of experience-1-->
+
+    <!--start of experience-2-->
+    <div class="col-md-6 col-lg-4 my-3">
+      <div class="card">
+        <img src="img/phoenix-2.png" class="card-img-top" alt="work-experience-2-img">
+        <!-- <h6 class="corner-text mb-0 px-3">New</h6> -->
+        <h2 class="my-2 text-capitalize text-center">The Phoenix,Dublin</h2>
+        <ul class="">
+          <li>Position: WordPress Developer</li>
+          <li>Type: Part-time</li>
+          <li>Description:
+            <ol>
+              <li>Worked on managing the magazine website on the WordPress portal.</li>
+              <li>Redesigned the front-end and managed the website’s back-end including database and e-commerce plugins like WooCommerce and Shopify.</li>
+              <li>Job description included managing Wordpress portal, updating site content, adding new plugins.</li>
+              <li>Communicated with the back-end team for PHP development regarding the plugins,template and more</li>
+              <li>Conducted WordPress training sessions with the team.</li>
+            </ol>
+          </li>
+        </ul>
+        <hr class="mb-0">
+
+      </div>
+    </div>
+    <!--end of experience-2 -->
+
+    <!--start of experience-3 -->
+    <div class="col-md-6 col-lg-4 my-3 mx-auto">
+      <div class="card">
+        <img src="img/worklabs_11.jpeg" class="card-img-top" alt="coffe">
+        <!-- <h6 class="corner-text mb-0 px-3">New</h6> -->
+        <h2 class="my-2 text-capitalize text-center">Worklabs,India</h2>
+        <ul class="">
+          <li>Position-Junior Front-end Web Developer</li>
+          <li>Type- Freelance</li>
+          <li>Description-
+            <ol>
+              <li>Worked in a team of 7 front-end engineers using Agile methodology</li>
+              <li> Developed a front-end template for a hospital, using HTML, CSS, JAVASCRIPT & JQUERY.
+              </li>
+              <li>Worked on developing front-end templates and WordPress sites for the costumers.</li>
+              <li>Developed a payment portal in PHP with Stripe Integration.</li>
+            </ol>
+          </li>
+        </ul>
+        <hr class="mb-0">
+      </div>
+    </div>
+
+  </div>
+
+</section>
+    <!--end of experience-->
+
+
+  <!--current project-->
+  <section id="current-project" class="py-5">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6 py-5 about-text text-center align-self-center">
+          <h2 class="text-uppercase">current project</h2>
+          <p class="lead text-light">
+            Working on building a fully functional self-driving car model fuelled entirely by Deep Learning. I am using Computer Vision techniques via OpenCV to identify lane lines for a self-driving car and 
+            training Perceptron-based Neural Network to classify between binary classes.I am working on training Convolutional Neural Networks to identify various traffic signs using Keras, a power Neural Network 
+            library in Python.
+          </p>
+          <a href="404.html" target="_blank" class="btn btn-lg d-block w-75 mx-auto text-uppercase mb-5">learn more<span style="color: red;"><sup>Beta</sup></span></a>
+        </div>
+        <div class="col-md-6 current-project-photo my-5">
+          <img src="img/code-card-dl-1.jpeg" class="current-project current-project-1 img-thumbnail">
+          <img src="img/code-card-dl-2.jpeg" class="current-project current-project-2 img-thumbnail">
+          <img src="img/code-card-dl-3.jpeg" class="current-project current-project-3 img-thumbnail">
+          <img src="img/code-card-1.jpg" class="current-project current-project-4 img-thumbnail">
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!--end of current project-->
+
+    <!--skills section-->
+
+    <section id="skills" class="pb-5 mt-3">
+      <div class="container">
+        <!--     title-->
+        <div class="row title mb-5">
+          <div class="col text-center">
+            <h1 class="text-uppercase">skills</h1>
+            <!-- <h3 class="text-capitalize">Lorem ipsum dolor sit amet.</h3> -->
+            <a href="#" class="mb-0"><i class="far fa-check-square"></i></a>
+            <div class="title-underline"></div>
+  
+          </div>
+  
+        </div>
+        <!--      end of title-->
+        <div class="row">
+          <!--       item-->
+          <div class="col-lg-6 my-5" style="font-size: 14px">
+            <div class="row">
+              <div class="col-6 d-flex flex-row align-items-center skills-icon">
+                <span><i class="fab fa-cuttlefish " ></i></span> 
+                <span><i class='fas fa-plus mb-4 ' style='font-size:25px'></i></span> 
+                <span><i class='fas fa-plus mb-4 ml-2' style='font-size:25px'></i></span>
+              </div>
+              <div class="col-6 ">
+                <h3 class="text-uppercase text-center">C++</h3>
+                    <ul>
+                      <li>Worked with Object-Oriented programming</li>
+                      <li>Programmed with Data Structures like Linked List, Trees, Arrays etc </li>
+                      <li>Worked on Concurrent Programming in C and C++</li>                    </ul>
+              </div>
+            </div>
+          </div>
+          <!--        item-->
+          <!--       item-->
+          <div class="col-lg-6 my-5 " style="font-size: 14px">
+            <div class="row">
+              <div class="col-6 d-flex align-items-center skills-icon">
+                <span><i class="fab fa-python"></i></span>
+              </div>
+              <div class="col-6">
+                <h3 class="text-uppercase">Python</h3>
+                  <ul>
+                    <li>Worked with Object-Oriented programming</li>
+                    <li>Worked with Automation solutions for optical networking in Python</li>
+                    <li>Worked with libraries like Pytest, Mock, Numpy</li>
+                  </ul>
+              </div>
+              <!-- <div class="col-6 d-flex flex-row align-items-center skills-icon pl-3">
+                <span><i class="fab fa-cuttlefish " ></i></span> 
+                <span><i class='fas fa-plus mb-4 ' style='font-size:20px'></i></span> 
+                <span><i class='fas fa-plus mb-4 ml-2' style='font-size:20px'></i></span>
+              </div> -->
+            </div>
+          </div>
+          <!--        item-->
+          <!--       item-->
+          <div class="col-lg-6 my-5" style="font-size: 14px">
+            <div class="row">
+              <div class="col-6 d-flex align-items-center skills-icon">
+                <span><i class="fab fa-js"></i></span>
+              </div>
+              <div class="col-6">
+                <h3 class="text-uppercase">Javascript</h3>
+                <ul>
+                  <li>Worked with Object-Oriented programming</li>
+                  <li>Worked with Regex, native DOM, control flow and error handling </li>
+                  <li>Worked with libraries and frameworks like Jquery, Vue.js, React</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!--        item-->
+          <!--       item-->
+          <div class="col-lg-6 my-5" style="font-size: 14px">
+            <div class="row">
+              <div class="col-6 d-flex align-items-center skills-icon">
+                <span><i class="fab fa-php"></i></span>
+              </div>
+              <div class="col-6">
+                <h3 class="text-uppercase">PHP</h3>
+                <ul>
+                  <li>Worked with Object-Oriented programming</li>
+                  <li>Worked with Model View Controller design for developing interfaces </li>
+                  <li>Worked with MySQL administration tools like phpMyAdmin(DBMS pairing for PHP)</li>
+                </ul>              
+              </div>
+            </div>
+          </div>
+          <!--        item-->
+          <!--       item-->
+          <div class="col-lg-6 my-5" style="font-size: 14px">
+            <div class="row">
+              <div class="col-6 d-flex align-items-center skills-icon">
+                <span><i class="fab fa-aws"></i></span>
+              </div>
+              <div class="col-6">
+                <h3 class="text-uppercase">Amazon web Services</h3>
+                <ul>
+                  <li>Developed with AWS compute services like EC2, Lambda and Elastic Bean Stalk</li>
+                  <li>Worked with  </li>Network and Content delivery services VPC for launching web servers 
+                  <li>Worked with storage services like Elastic Block Service(EBS)</li>
+                </ul>                </div>
+            </div>
+          </div>
+          <!--        item-->
+          <div class="col-lg-6 my-5" style="font-size: 14px">
+            <div class="row">
+              <div class="col-6 d-flex align-items-center skills-icon">
+                <span><i class="fab fa-microsoft"></i></span>
+              </div>
+              <div class="col-6">
+                <h3 class="text-uppercase">Microsoft Azure</h3>
+                <ul>
+                  <li>Cleared Microsoft Techical Associate Certification in Azure Cloud Computing</li>
+                  <li>Worked with Azure SQL databases, Web app deployment and Storage</li>
+                  <li>Worked with Active Directory(AD), Backup and Site Recovery and load balancers for virtual networks </li>
+                </ul>               
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 my-5" style="font-size: 14px">
+            <div class="row">
+              <div class="col-6 d-flex align-items-center skills-icon">
+                <span><i class="fas fa-database"></i></span>
+              </div>
+              <div class="col-6">
+                <h3 class="text-uppercase">Databases</h3>
+                <ul>
+                  <li>Worked MySQL, Oracle DB, NOSQL DB like MongoDB</li>
+                  <li>Worked on designing ER diagrams and converting them to tables</li>
+                  <li>Worked on using NOrmalization for data refinement</li>
+                </ul>               
+               </div>
+            </div>
+          </div>
+
+          <!--       item-->
+          <div class="col-lg-6 my-5" style="font-size: 14px">
+            <div class="row">
+              <div class="col-6 d-flex align-items-center skills-icon">
+                <span><i class="fab fa-linux"></i></span>
+              </div>
+              <div class="col-6">
+                <h3 class="text-uppercase">shell scripting</h3>
+                <ul>
+                  <li>Worked with Shells lik sh, bash and zsh</li>
+                  <li>Worked on creating logics in shell scripts using control flow, globbing</li>
+                </ul>                
+              </div>
+            </div>
+          </div>
+          <!--item-->
+
+        </div>
+      </div>
+  
+    </section>
+    <!--end of skills section-->
+
+
+  
+  <section id="contact" class="py-5">
+    <div class="container">
+      <div class="row height-60">
+        <div class="col-lg-6 col-sm-6 mx-auto my-3 ">
+          <!-- <iframe class="height-60" src="https://docs.google.com/forms/d/e/1FAIpQLSfJFf-xzUInpvtNLGI3-RV9ZQK7PGIwfL-TUMoLi0sTQx-7uA/viewform?embedded=true" width="100%"  scrolling="no" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> -->
+          <iframe class="height-60" src="https://docs.google.com/forms/d/e/1FAIpQLSfJFf-xzUInpvtNLGI3-RV9ZQK7PGIwfL-TUMoLi0sTQx-7uA/viewform?embedded=true" width="100%"   scrolling="no" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        </div>
+        <div class="col-lg-6 col-sm-6 mx-auto my-3">
+          <div class="card text-center">
+            <div class="card-header text-centertext-uppercase">
+              <h1 class="text-uppercase text-weight-bold">contact me</h1>
+            </div>
+            <div class="card-body text-center">
+                
+                <div class="input-group my-3 d-flex justify-content-center">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="input-username" style="border-radius: 4px;"><i class="fas fa-users"></i><span class="text-light ml-3">ARK NANDAN SINGH CHAUHAN</span></span>
+                  </div>
+
+                  <!-- <input type="text" class="form-control form-control-lg text-capitalize" placeholder="Enter your Name"> -->
+                  <!-- <p class="bg-white">ARK NANDAN SINGH CHAUHAN</p> -->
+                </div>
+
+
+                <div class="input-group my-3  d-flex justify-content-center">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="input-phone" style="border-radius: 4px;"><i class="fas fa-phone"></i><span class="text-light ml-3">(+353)0876181096</span></span>
+                  </div>
+                  <!-- <input type="number" class="form-control form-control-lg text-capitalize" placeholder="Enter your phone number here(Optional)"> -->
+                </div>
+
+                <div class="input-group my-3  d-flex justify-content-center">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="input-email" style="border-radius: 4px;"><i class="fas fa-envelope"></i><span class="text-light ml-3">chauhaar@tcd.ie</span></span>
+                  </div>
+                  <!-- <input type="email" class="form-control form-control-lg text-capitalize" placeholder="Enter your email here"> -->
+                </div>
+
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <!--footer-->
+  <footer class="container-fluid py-2 px-3">
+    <div class="row">
+      <div class="col d-flex justify-content-between align-items-baseline">
+        <div class="footer-icons">
+          <a href="https://www.linkedin.com/in/arknandan-singh-chauhan/" target="_blank" class="mx-2"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/arknandan25" target="_blank" class="mx-2"><i class="fab fa-github"></i></a>
+        </div>
+        <h5 class="text-capitalize">
+          &copy;2020 copyright : Ark Chauhan
+        </h5>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- Optional JavaScript -->
+
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+  <!--  isotope-->
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+</body>
+
 </html>

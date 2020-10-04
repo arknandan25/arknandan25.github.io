@@ -73,18 +73,6 @@
 
             <!-- The slideshow -->
             <div class="carousel-inner">
-              <div class="carousel-item item-1 ">
-                <div class="carousel-caption mb-5 text-right">
-                  <h1 class="display-3 text-capitalize mb-2 text-light">I am a Developer</h1>
-                  <a href="resume.html" target="_blank" class="btn btn-lg mb-5 text-uppercase banner-btn">my resume</a>
-                </div>
-              </div>
-              <div class="carousel-item item-2">
-                <div class="carousel-caption mb-5 text-center">
-                  <h1 class="display-3 text-capitalize mb-2 text-light">I am a Designer</h1>
-                  <a href="resume.html" target="_blank" class="btn btn-lg mb-5 text-uppercase banner-btn">my resume</a>
-                </div>
-              </div>
               <div class="carousel-item item-3 active">
                 <div class="carousel-caption mb-5 text-left">
                   <h1 class="display-3  mb-2 text-light">Hi,I am Ark Chauhan</h1>
@@ -100,10 +88,6 @@
     <span class="carousel-control-next-icon"></span>
     <span class="sr-only">Next</span>
   </a>
-
-
-
-
           </div>
         </div>
       </div>
@@ -137,104 +121,120 @@
       <!--      images row-->
       <div class="row grid projects">
         <div class="col-sm-6 col-md-4 my-3 web">
-          <div class="card" >
+          <div class="card" style="font-size: 13px">
             <img src="img/code-card-1.jpg"  style="height: 35vh;width: 100%;" class="card-img-top" alt="Compiler">
             <div class="card-body">
               <h5 class="card-title">Web Code Player</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <ul class="card-text">
+                <li>Developed a code player for real time web development </li>
+                <li>Uses Javascript and Jquery for developing & updating data on the website</li>
+                <li>Has support for HTML, CSS, JS and displays the output for each change in real time</li>
+              </ul>
               <a href="https://arknandan25.github.io/web_compiler/compiler.html" target="_blank" class="btn btn-outline-success">Preview</a>
-              <a href="#" class="btn btn-outline-dark">Github</a>
+              <a href="404.html" class="btn btn-outline-dark">Github</a>
             </div>
           </div>
-
         </div>
 
-        <div class="col-sm-6 col-md-4 my-3 web">
-          <div class="card" >
-            <img src="img/code-card-2-covid.jpg" style="height: 35vh;width: 100%;" class="card-img-top" alt="Covid">
-            <div class="card-body">
-              <h5 class="card-title">Covid-19 Patient Tracker </h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-outline-dark">Github</a>
-              
-
-            </div>
-          </div>
-
-        </div>
-
-        <div class="col-sm-6 col-md-4 my-3 web">
+        <div class="col-sm-6 col-md-4 my-3 web" style="font-size: 13px">
           <div class="card" >
             <img src="img/code-card-3-movie-2.jpg" style="height: 35vh;width: 100%;" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">IMDB Movie Tracker</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a target="_blank" class="btn btn-outline-success">Preview</a>
+              <ul>
+                <li>A movie/tv-show tracker in ES6 Javascript and JQuery with OMDB API integration</li>
+                <li>Uses Axios, a Promise based HTTP client for the browser</li>
+                <Li>Developed a User friendly and responsive GUI using CSS media queries and BootStrap</Li>
+              </ul>
+              <!-- <a target="_blank" class="btn btn-outline-success">Preview</a> -->
               <a href="#" target="_blank" class="btn btn-outline-dark">Github</a>
             </div>
           </div>
 
         </div>
-        
-        <div class="col-sm-6 col-md-4 my-3 android">
+
+        <div class="col-sm-6 col-md-4 my-3 android" style="font-size: 13px">
           <div class="card" >
             <img src="img/code-card-whatsapp-4.jpg"  style="height: 35vh;width: 100%;" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">WhatsApp Clone</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-outline-dark">Github</a>
+              <ul>
+                <li>A clone of WhatApp in Java for Android development</li>
+                <li>Uses Google's Firebase for realtime updates in chats and rendering user information</li>
+                <Li>Core features include: one-on-one chat, group chat, adding members via phone's contact list</Li>
+              </ul>              <a href="https://github.com/arknandan25/Whatsapp-Clone" class="btn btn-outline-dark">Github</a>
             </div>
           </div>
 
         </div>
 
-        <div class="col-sm-6 col-md-4 my-3 ml">
+
+        <div class="col-sm-6 col-md-4 my-3 web" style="font-size: 13px">
           <div class="card" >
-            <img src="img/code-card-4-face-1.jpg" style="height: 35vh;width: 100%;" class="card-img-top" alt="...">
+            <img src="img/code-card-2-covid.jpg" style="height: 35vh;width: 100%;" class="card-img-top" alt="Covid">
             <div class="card-body">
-              <h5 class="card-title">Face Detection</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-outline-dark">Github</a>
+              <h5 class="card-title">Covid-19 Patient Tracker </h5>
+              <ul class="card-text">
+                <li>Developed a Portal for health workers to register data of covid patients</li>
+                <li>Used Python socket programming to create a central server for  transmission of data packets b/w workers and hospitals</li>
+                <li>Used AES encryption algorithm for censoring all confidential data </li>
+                <li>Used tkinter for developing a GUI interfce for the server and the clients</li>
+              </ul>
+              <a href="404.html" class="btn btn-outline-dark">Github</a>
             </div>
           </div>
-
         </div>
 
-
-
-        <div class="col-sm-6 col-md-4 my-3 web">
-          <div class="card" >
-            <img src="img/code-card-twitter-1.jpg" class="card-img-top"  style="height: 35vh;width: 100%;" alt="twitter">
-            <div class="card-body">
-              <h5 class="card-title">Twitter Clone</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a target="_blank" class="btn btn-outline-success">Preview</a>
-              <a href="#" class="btn btn-outline-dark">Github</a>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="col-sm-6 col-md-4 my-3 ml">
+        <div class="col-sm-6 col-md-4 my-3 ml" style="font-size: 13px">
           <div class="card" >
             <img src="img/code-card-key-1.jpg" class="card-img-top"   style="height: 35vh;width: 100%;" alt="...">
             <div class="card-body">
               <h5 class="card-title">Keylogger</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-outline-dark">Github</a>
+              <ul class="card-text">
+                <li>Keylogger made in C++ with windows programming in eclipse and mingw compiler</li>
+                <li>Log function makes use of GetAsyncKeyState(key) function to register a key and then checks for multiple combinations of keystrokes</li>
+                <li> The Mask function uses windows programming to hide the dialog box created in the release version of the cpp file</li>
+              </ul>
+              <a href="404.html" class="btn btn-outline-dark">Github</a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-sm-6 col-md-4 my-3 web" style="font-size: 13px">
+          <div class="card" >
+            <img src="img/code-card-twitter-1.jpg" class="card-img-top"  style="height: 35vh;width: 100%;" alt="twitter">
+            <div class="card-body">
+              <h5 class="card-title">Twitter Clone</h5>
+              <ul class="card-text">
+                <li>A clone of twitter made in core PHP without any frame work</li>
+                <li>Uses the Model-View-Controller(MVC) using PHP, Javascript, Mysql, Ajax</li>
+                <li>Has all the core functionalty like logging/signup, creating and tweeting a post , searching tweets, following/unfollowing other users, viewing your timeline,
+                  viewing your recent tweets, public profiles with chat option
+                </li>
+              </ul>
+              <!-- <a target="_blank" class="btn btn-outline-success">Preview</a> -->
+              <a href="https://github.com/arknandan25/twitterclone" class="btn btn-outline-dark">Github</a>
             </div>
           </div>
 
         </div>
 
-
+        <div class="col-sm-6 col-md-4 my-3 ml" style="font-size: 13px">
+          <div class="card" >
+            <img src="img/code-card-4-face-1.jpg" style="height: 35vh;width: 100%;" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Face Detection</h5>
+              <ul>
+                <li>Worked on facial/smile detection with OpenCV and Python </li>
+                <li>Worked on Object Detection using Single Shot Detection and YOLO</li>
+                <Li>Worked on image creation with Generative Adversarial Networks(GANs)</Li>
+              </ul>              <a href="404.html" class="btn btn-outline-dark">Github</a>
+            </div>
+          </div>
+        </div>
       </div>
-
-
-
     </div>
-
-
   </section>
 
 
@@ -304,16 +304,20 @@
       <div class="card">
         <img src="img/aws-3.png" class="card-img-top" alt="work-experience-1-img">
         <!-- <h6 class="corner-text mb-0 px-3">New</h6> -->
-        <h1 class="my-2 text-capitalize ">Amazon Web Services,Dublin</h1>
-        <ul class="lead text-muted">
-          <li>Position-Systems Development Engineer</li>
-          <li>Type- Internship</li>
-          <li>Description-
+        <h2 class="my-2 text-capitalize text-center ">Amazon Web Services,Dublin</h2>
+        <ul class="">
+          <li>Position: Systems Development Engineer</li>
+          <li>Type: Internship</li>
+          <li>Description:
             <ol>
-              <li>Worked in Optical Automation and Data team</li>
-              <li>Worked on Device Operations for Device Provisioning via ZTP process</li>
-              <li>Worked in Tigris, Amazon's inhouse optical networking device-width</li>
-              <li>Worked in Physical Assertions-preventing single point of failure in data transmission</li>
+              <li>Worked on the development of automation solutions within AWS’s Optical Networking ecosystem.</li>
+              <li>Worked on Device Operations for provisioning  network devices via Zero Touch Provisioning(ZTP) process without human intervention.
+              </li>
+              <li>Worked on Amazon’s latest in-house network device Tigris and delivered operations supported by it.</li>
+              <li>Designed, developed and delivered software in Python  in order to help network engineers enable the best network performance.
+              </li>
+              <li>Worked with Pipelines for Continuous Integration and deployment of code globally.
+              </li>
             </ol>
           </li>
         </ul>
@@ -327,16 +331,17 @@
       <div class="card">
         <img src="img/phoenix-2.png" class="card-img-top" alt="work-experience-2-img">
         <!-- <h6 class="corner-text mb-0 px-3">New</h6> -->
-        <h1 class="my-2 text-capitalize">The Phoenix,Dublin</h1>
-        <ul class="lead text-muted">
-          <li>Position-WordPress Developer</li>
-          <li>Type- Part-time</li>
-          <li>Description-
+        <h2 class="my-2 text-capitalize text-center">The Phoenix,Dublin</h2>
+        <ul class="">
+          <li>Position: WordPress Developer</li>
+          <li>Type: Part-time</li>
+          <li>Description:
             <ol>
-              <li>Worked in a team of jounalists as a </li>
-              <li>Job desc included managing Wordpress portal, updating site content, adding new plugins, ..</li>
+              <li>Worked on managing the magazine website on the WordPress portal.</li>
+              <li>Redesigned the front-end and managed the website’s back-end including database and e-commerce plugins like WooCommerce and Shopify.</li>
+              <li>Job description included managing Wordpress portal, updating site content, adding new plugins.</li>
               <li>Communicated with the back-end team for PHP development regarding the plugins,template and more</li>
-              <li>Worked with Adobe photoshop</li>
+              <li>Conducted WordPress training sessions with the team.</li>
             </ol>
           </li>
         </ul>
@@ -351,16 +356,17 @@
       <div class="card">
         <img src="img/worklabs_11.jpeg" class="card-img-top" alt="coffe">
         <!-- <h6 class="corner-text mb-0 px-3">New</h6> -->
-        <h1 class="my-2 text-capitalize">Worklabs,India</h1>
-        <ul class="lead text-muted">
+        <h2 class="my-2 text-capitalize text-center">Worklabs,India</h2>
+        <ul class="">
           <li>Position-Junior Front-end Web Developer</li>
           <li>Type- Freelance</li>
           <li>Description-
             <ol>
-              <li>Worked in a team of engineers developing a fron-end tempelate for a hospital</li>
-              <li>Worked in a agile environment.....</li>
-              <li>Worked in HTML,CSS,Bootstrap,Wordpress for development</li>
-              <li>Worked with Client side Javascript</li>
+              <li>Worked in a team of 7 front-end engineers using Agile methodology</li>
+              <li> Developed a front-end template for a hospital, using HTML, CSS, JAVASCRIPT & JQUERY.
+              </li>
+              <li>Worked on developing front-end templates and WordPress sites for the costumers.</li>
+              <li>Developed a payment portal in PHP with Stripe Integration.</li>
             </ol>
           </li>
         </ul>
@@ -380,15 +386,18 @@
       <div class="row">
         <div class="col-md-6 py-5 about-text text-center align-self-center">
           <h2 class="text-uppercase">current project</h2>
-          <p class="lead text-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium neque voluptatum nam explicabo provident et, similique necessitatibus, eaque soluta in.</p>
-          <a href="#" class="btn btn-lg d-block w-75 mx-auto text-uppercase mb-5">learn more</a>
+          <p class="lead text-light">
+            Working on building a fully functional self-driving car model fuelled entirely by Deep Learning. I am using Computer Vision techniques via OpenCV to identify lane lines for a self-driving car and 
+            training Perceptron-based Neural Network to classify between binary classes.I am working on training Convolutional Neural Networks to identify various traffic signs using Keras, a power Neural Network 
+            library in Python.
+          </p>
+          <a href="404.html" target="_blank" class="btn btn-lg d-block w-75 mx-auto text-uppercase mb-5">learn more<span style="color: red;"><sup>Beta</sup></span></a>
         </div>
         <div class="col-md-6 current-project-photo my-5">
           <img src="img/code-card-dl-1.jpeg" class="current-project current-project-1 img-thumbnail">
           <img src="img/code-card-dl-2.jpeg" class="current-project current-project-2 img-thumbnail">
           <img src="img/code-card-dl-3.jpeg" class="current-project current-project-3 img-thumbnail">
           <img src="img/code-card-1.jpg" class="current-project current-project-4 img-thumbnail">
-
         </div>
       </div>
     </div>
@@ -414,29 +423,36 @@
         <!--      end of title-->
         <div class="row">
           <!--       item-->
-          <div class="col-lg-6 my-5">
+          <div class="col-lg-6 my-5" style="font-size: 14px">
             <div class="row">
               <div class="col-6 d-flex flex-row align-items-center skills-icon">
                 <span><i class="fab fa-cuttlefish " ></i></span> 
                 <span><i class='fas fa-plus mb-4 ' style='font-size:25px'></i></span> 
                 <span><i class='fas fa-plus mb-4 ml-2' style='font-size:25px'></i></span>
               </div>
-              <div class="col-6">
-                <h3 class="text-uppercase">C++</h3>
-                <p class="text-muted">Have worked with C, C++, object-oriented programming.Datastructures like Hashtables,BST,LL,Stacks,Queues,Vectors.WOrked in algorithms with optimal TC,SC.</p>
+              <div class="col-6 ">
+                <h3 class="text-uppercase text-center">C++</h3>
+                    <ul>
+                      <li>Worked with Object-Oriented programming</li>
+                      <li>Programmed with Data Structures like Linked List, Trees, Arrays etc </li>
+                      <li>Worked on Concurrent Programming in C and C++</li>                    </ul>
               </div>
             </div>
           </div>
           <!--        item-->
           <!--       item-->
-          <div class="col-lg-6 my-5">
+          <div class="col-lg-6 my-5 " style="font-size: 14px">
             <div class="row">
               <div class="col-6 d-flex align-items-center skills-icon">
                 <span><i class="fab fa-python"></i></span>
               </div>
               <div class="col-6">
                 <h3 class="text-uppercase">Python</h3>
-                <p class="text-muted">Have worked with C, C++, object-oriented programming.Datastructures like Hashtables,BST,LL,Stacks,Queues,Vectors.WOrked in algorithms with optimal TC,SC.</p>
+                  <ul>
+                    <li>Worked with Object-Oriented programming</li>
+                    <li>Worked with Automation solutions for optical networking in Python</li>
+                    <li>Worked with libraries like Pytest, Mock, Numpy</li>
+                  </ul>
               </div>
               <!-- <div class="col-6 d-flex flex-row align-items-center skills-icon pl-3">
                 <span><i class="fab fa-cuttlefish " ></i></span> 
@@ -447,80 +463,103 @@
           </div>
           <!--        item-->
           <!--       item-->
-          <div class="col-lg-6 my-5">
+          <div class="col-lg-6 my-5" style="font-size: 14px">
             <div class="row">
               <div class="col-6 d-flex align-items-center skills-icon">
                 <span><i class="fab fa-js"></i></span>
               </div>
               <div class="col-6">
                 <h3 class="text-uppercase">Javascript</h3>
-                <p class="text-muted">Have worked with C, C++, object-oriented programming.Datastructures like Hashtables,BST,LL,Stacks,Queues,Vectors.WOrked in algorithms with optimal TC,SC.</p>
+                <ul>
+                  <li>Worked with Object-Oriented programming</li>
+                  <li>Worked with Regex, native DOM, control flow and error handling </li>
+                  <li>Worked with libraries and frameworks like Jquery, Vue.js, React</li>
+                </ul>
               </div>
             </div>
           </div>
           <!--        item-->
           <!--       item-->
-          <div class="col-lg-6 my-5">
+          <div class="col-lg-6 my-5" style="font-size: 14px">
             <div class="row">
               <div class="col-6 d-flex align-items-center skills-icon">
                 <span><i class="fab fa-php"></i></span>
               </div>
               <div class="col-6">
                 <h3 class="text-uppercase">PHP</h3>
-                <p class="text-muted">Have worked with C, C++, object-oriented programming.Datastructures like Hashtables,BST,LL,Stacks,Queues,Vectors.WOrked in algorithms with optimal TC,SC.</p>
+                <ul>
+                  <li>Worked with Object-Oriented programming</li>
+                  <li>Worked with Model View Controller design for developing interfaces </li>
+                  <li>Worked with MySQL administration tools like phpMyAdmin(DBMS pairing for PHP)</li>
+                </ul>              
               </div>
             </div>
           </div>
           <!--        item-->
           <!--       item-->
-          <div class="col-lg-6 my-5">
+          <div class="col-lg-6 my-5" style="font-size: 14px">
             <div class="row">
               <div class="col-6 d-flex align-items-center skills-icon">
                 <span><i class="fab fa-aws"></i></span>
               </div>
               <div class="col-6">
                 <h3 class="text-uppercase">Amazon web Services</h3>
-                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, architecto iusto est aliquid, corporis excepturi cupiditate iure hic accusantium fugiat.</p>
-              </div>
+                <ul>
+                  <li>Developed with AWS compute services like EC2, Lambda and Elastic Bean Stalk</li>
+                  <li>Worked with  </li>Network and Content delivery services VPC for launching web servers 
+                  <li>Worked with storage services like Elastic Block Service(EBS)</li>
+                </ul>                </div>
             </div>
           </div>
           <!--        item-->
-          <!--       item-->
-          <div class="col-lg-6 my-5">
-            <div class="row">
-              <div class="col-6 d-flex align-items-center skills-icon">
-                <span><i class="fab fa-linux"></i></span>
-              </div>
-              <div class="col-6">
-                <h3 class="text-uppercase">shell scripting</h3>
-                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, architecto iusto est aliquid, corporis excepturi cupiditate iure hic accusantium fugiat.</p>
-              </div>
-            </div>
-          </div>
-          <!--item-->
-          <div class="col-lg-6 my-5">
-            <div class="row">
-              <div class="col-6 d-flex align-items-center skills-icon">
-                <span><i class="fas fa-database"></i></span>
-              </div>
-              <div class="col-6">
-                <h3 class="text-uppercase">Databases</h3>
-                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, architecto iusto est aliquid, corporis excepturi cupiditate iure hic accusantium fugiat.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6 my-5">
+          <div class="col-lg-6 my-5" style="font-size: 14px">
             <div class="row">
               <div class="col-6 d-flex align-items-center skills-icon">
                 <span><i class="fab fa-microsoft"></i></span>
               </div>
               <div class="col-6">
                 <h3 class="text-uppercase">Microsoft Azure</h3>
-                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, architecto iusto est aliquid, corporis excepturi cupiditate iure hic accusantium fugiat.</p>
+                <ul>
+                  <li>Cleared Microsoft Techical Associate Certification in Azure Cloud Computing</li>
+                  <li>Worked with Azure SQL databases, Web app deployment and Storage</li>
+                  <li>Worked with Active Directory(AD), Backup and Site Recovery and load balancers for virtual networks </li>
+                </ul>               
               </div>
             </div>
           </div>
+
+          <div class="col-lg-6 my-5" style="font-size: 14px">
+            <div class="row">
+              <div class="col-6 d-flex align-items-center skills-icon">
+                <span><i class="fas fa-database"></i></span>
+              </div>
+              <div class="col-6">
+                <h3 class="text-uppercase">Databases</h3>
+                <ul>
+                  <li>Worked MySQL, Oracle DB, NOSQL DB like MongoDB</li>
+                  <li>Worked on designing ER diagrams and converting them to tables</li>
+                  <li>Worked on using NOrmalization for data refinement</li>
+                </ul>               
+               </div>
+            </div>
+          </div>
+
+          <!--       item-->
+          <div class="col-lg-6 my-5" style="font-size: 14px">
+            <div class="row">
+              <div class="col-6 d-flex align-items-center skills-icon">
+                <span><i class="fab fa-linux"></i></span>
+              </div>
+              <div class="col-6">
+                <h3 class="text-uppercase">shell scripting</h3>
+                <ul>
+                  <li>Worked with Shells lik sh, bash and zsh</li>
+                  <li>Worked on creating logics in shell scripts using control flow, globbing</li>
+                </ul>                
+              </div>
+            </div>
+          </div>
+          <!--item-->
 
         </div>
       </div>
